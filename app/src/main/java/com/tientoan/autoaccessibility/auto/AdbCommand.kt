@@ -24,12 +24,12 @@ object AdbCommand {
         runCommand("input text $text")
     }
 
-    fun tap(x: Int, y: Int) {
-        runCommand("input tap $x $y")
-    }
-
     fun reboot() {
         runCommand("reboot")
+    }
+
+    fun tap(x: Int, y: Int) {
+        runCommand("input tap $x $y")
     }
 
     private fun runCommand(command: String) {
